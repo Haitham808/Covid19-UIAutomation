@@ -19,6 +19,10 @@ Installation process
 - mvn clean test 
 
 
+------------ Extent report --------------
+- once the test is finished, the extent report will be generated in extent/CWB folder alonf with the screenshots
+
+
 # Cross browser testing
 
 - you can specisfy which browser you want to test on by using "browser=  " in src/main/resources/properties/config.properties file
