@@ -19,7 +19,7 @@ Installation process
 - mvn clean test 
 
 
-# cross browser testing
+# Cross browser testing
 
 - you can specisfy which browser you want to test on by using "browser=  " in src/main/resources/properties/config.properties file
 - for chrome browser, use : browser=chrome
