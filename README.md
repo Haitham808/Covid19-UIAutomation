@@ -15,5 +15,17 @@ Installation process
 
 
 
-Command to run E2E scenario
+--------Command to run E2E scenario------------
 - mvn clean test 
+
+
+# cross browser testing
+
+- you can specisfy which browser you want to test on by using "browser=  " in src/main/resources/properties/config.properties file
+- for chrome browser, use : browser=chrome
+- for Edge browser, use : browser=Edge
+- for firefox browser, use : browser=firefox
+
+# Github CI - [Github Actions]
+
+- the pipeline is in place and will be triggered once there is a push to master branch or a pull request to master branch 
