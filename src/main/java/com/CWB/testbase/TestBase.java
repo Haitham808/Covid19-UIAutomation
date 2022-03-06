@@ -79,13 +79,16 @@ public class TestBase {
 				
 			} else if (browser.equalsIgnoreCase("Edge")) {
 				
-				System.setProperty("webdriver.edge.driver", "Lib\\MicrosoftWebDriver.exe");
+				System.setProperty("webdriver.edge.driver", "Lib\\msedgedriver.exe");
 				driver = new EdgeDriver();
-				
+				driver.manage().window().maximize();
+				driver.manage().deleteAllCookies();
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				
 				System.setProperty("webdriver.gecko.driver", "Lib\\geckodriver.exe");
 				driver = new FirefoxDriver();
+				driver.manage().window().maximize();
+				driver.manage().deleteAllCookies();
 			}
 
 			driver.get(baseURL);
