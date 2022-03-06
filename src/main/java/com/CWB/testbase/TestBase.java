@@ -36,7 +36,7 @@ public class TestBase {
 
 			try {
 				fis = new FileInputStream(
-						System.getProperty("user.dir") + "\\src\\main\\resources\\properties\\Config.properties");
+						System.getProperty("user.dir") + "//src//main//resources//properties//config.properties");
 			} catch (FileNotFoundException e) {
 				
 				e.printStackTrace();
@@ -62,7 +62,7 @@ public class TestBase {
 			baseURL = config.getProperty("baseURL");
 
 			if (browser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "Lib\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "Lib//chromedriver.exe");
 				HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 
 				ChromeOptions options = new ChromeOptions();
@@ -79,13 +79,13 @@ public class TestBase {
 				
 			} else if (browser.equalsIgnoreCase("Edge")) {
 				
-				System.setProperty("webdriver.edge.driver", "Lib\\msedgedriver.exe");
+				System.setProperty("webdriver.edge.driver", "Lib//msedgedriver.exe");
 				driver = new EdgeDriver();
 				driver.manage().window().maximize();
 				driver.manage().deleteAllCookies();
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				
-				System.setProperty("webdriver.gecko.driver", "Lib\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "Lib//geckodriver.exe");
 				driver = new FirefoxDriver();
 				driver.manage().window().maximize();
 				driver.manage().deleteAllCookies();

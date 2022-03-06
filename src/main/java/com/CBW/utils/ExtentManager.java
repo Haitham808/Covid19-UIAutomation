@@ -12,8 +12,8 @@ public class ExtentManager {
 	
 	public static ExtentReports getInstance1() {
 		if(extent==null) {
-			extent =new ExtentReports(System.getProperty("user.dir")+"\\extent\\CWB\\CWB.html", true, DisplayOrder.OLDEST_FIRST);
-			extent.loadConfig(new File (System.getProperty("user.dir")+"\\src\\main\\resources\\extentconfig\\ReportsConfig.xml"));
+			extent =new ExtentReports(System.getProperty("user.dir")+"//extent//CWB//CWB.html", true, DisplayOrder.OLDEST_FIRST);
+			extent.loadConfig(new File (System.getProperty("user.dir")+"//src//main//resources//extentconfig//ReportsConfig.xml"));
 		}
 		
 		return extent;
